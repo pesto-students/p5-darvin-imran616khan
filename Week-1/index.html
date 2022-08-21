@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CattyBoard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .sidebar {
+        height: 80%;
+        width: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: whitesmoke;
+        overflow-x: hidden;
+        padding-top: 16px;
+      }
+
+      .sidebar i {
+        padding: 6px 8px 50px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        display: block;
+      }
+
+      .head {
+        margin-left: 50px; /* Same as the width of the sidenav */
+        height: 30%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: gray;
+        padding: 0px 0px;
+        overflow-x: hidden;
+      }
+
+      #headImage {
+        padding: 6px;
+        float: left;
+      }
+      #headText {
+        float: left;
+        color: white;
+      }
+
+      #headText i {
+        padding: 16px;
+        margin-top: 50px;
+        margin-left: 0px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      table {
+        margin-left: 50px; /* Same as the width of the sidenav */
+        margin-top: 16%;
+        height: 53%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 10px;
+        right: 10px;
+        overflow-x: hidden;
+        border-collapse: collapse;
+        border-spacing: 0px;
+      }
+
+      table td {
+        border: none;
+        text-align: left;
+      }
+
+      table td button {
+        color: blue;
+      }
+
+      table tr {
+        height: 0px;
+      }
+
+      table tr:nth-child(even) {
+        background-color: whitesmoke;
+      }
+
+      .foot {
+        margin-left: 0px; /* Same as the width of the sidenav */
+        margin-top: 45%;
+        height: 20%;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        overflow-x: hidden;
+        background-color: gray;
+      }
+
+      .foot img {
+        float: left;
+      }
+
+      #footText {
+        float: left;
+        padding: 30px;
+        color: white;
+        text-align: center;
+      }
+
+      #footIcons {
+        float: left;
+        margin-left: 250px;
+        margin-block: 60px;
+        color: white;
+        text-align: center;
+      }
+
+      #footIcons i {
+        margin-inline: 60px;
+      }
+
+      #headImage img {
+        height: 80%;
+        width: 80%;
+      }
+
+      .foot img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 80%;
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <i class="fa fa-bars"></i>
+      <i class="fa fa-home"></i>
+      <i class="fa fa-search"></i>
+      <i class="fa fa-volume-up"></i>
+      <i class="fa fa-user"></i>
+      <i class="fa fa-spotify"></i>
+      <i class="fa fa-settings"></i>
+      <i class="fa fa-soundcloud"></i>
+    </div>
+
+    <div class="head">
+      <div id="headImage">
+        <img
+          src="https://vif1g.csb.app/src/assets/cattyboard.jpg"
+          alt="CattyBoard Image"
+        />
+      </div>
+      <div id="headText">
+        <h2>CattyBoard Top 100 Single Charts (11.06.36)</h2>
+        <p>Unknown Artist</p>
+        <p>2016.Charls.100songs</p>
+        <i class="fa fa-play"> Play all </i>
+        <i class="fa fa-plus"> Add to </i>
+        <i class="fa fa-ellipsis-h"> More </i>
+      </div>
+    </div>
+
+    <table>
+      <tr>
+        <td>1.One Dance</td>
+        <td>Crake feat CatKid & Cyla</td>
+        <td>2:54</td>
+        <td><button>CATTY CLOUD SYNC</button></td>
+      </tr>
+      <tr>
+        <td>2.Panda</td>
+        <td>Cattee</td>
+        <td>4:06</td>
+        <td><button>CATTY CLOUD SYNC</button></td>
+      </tr>
+      <tr>
+        <td>3.Can't Stop the Feeling!</td>
+        <td>Catin Cimberlake</td>
+        <td>3:56</td>
+        <td><button>CATTY CLOUD SYNC</button></td>
+      </tr>
+      <tr>
+        <td>4.Work From Home</td>
+        <td>Cat Harmony feat Colla</td>
+        <td>2:54</td>
+        <td><button>CATTY CLOUD SYNC</button></td>
+      </tr>
+    </table>
+
+    <div class="foot">
+      <img
+        src="https://vif1g.csb.app/src/assets/cattyboard.jpg"
+        alt="CattyBoard Image"
+      />
+      <div id="footText">
+        <p>If It Ain't Love</p>
+        <p>Catson Derulo</p>
+      </div>
+      <div id="footIcons">
+        <i class="fa fa-step-backward"></i>
+        <i class="fa fa-pause"></i>
+        <i class="fa fa-step-forward"></i>
+        <i class="fa fa-undo"></i>
+        <i class="fa fa-random"></i>
+      </div>
+    </div>
+  </body>
+</html>
